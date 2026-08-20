@@ -1,17 +1,1 @@
-name: Run My Bash Script
-
-on:
-  workflow_dispatch:
-
-jobs:
-  run-bash:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Execute my actual script
-        run: |
-          echo "Hello World"
-          python3 --version
-          uname -a
+python main.py
